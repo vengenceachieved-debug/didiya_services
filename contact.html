@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Didiya Cleaning Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=Bricolage+Grotesque:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <a href="index.html" class="wordmark">
+      <svg class="wordmark-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Didiya droplet mark">
+        <path d="M20 4 C20 4 9 18 9 26 C9 33 14 37 20 37 C26 37 31 33 31 26 C31 18 20 4 20 4 Z" fill="#0E3331"/>
+        <ellipse cx="15.5" cy="21" rx="2.6" ry="4.6" fill="#D8A445" opacity="0.9" transform="rotate(-18 15.5 21)"/>
+      </svg>
+      <span class="wordmark-text">
+        <span class="wordmark-name">Didiya</span>
+        <span class="wordmark-tag">Cleaning Services</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="why-us.html">Why Didiya</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:[PHONE NUMBER]" class="call-btn">Call [PHONE NUMBER]</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-hero slideshow">
+    <div class="slideshow-slide active" style="background-image:url('https://images.unsplash.com/photo-1627074899165-89603d93e12f?auto=format&fit=crop&w=1600&q=70');"></div>
+    <div class="slideshow-slide" style="background-image:url('https://images.unsplash.com/photo-1647381518264-97ff1835026f?auto=format&fit=crop&w=1600&q=70');"></div>
+    <div class="slideshow-slide" style="background-image:url('https://images.unsplash.com/photo-1627905646269-7f034dcc5738?auto=format&fit=crop&w=1600&q=70');"></div>
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <h1>Let's get your next turnover booked.</h1>
+      <p>Send a few details about the property and your booking pattern — we'll come back with a quote, usually within one business day.</p>
+    </div>
+  </div>
+
+  <section class="contact-wrap">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <h2>Get a free turnover quote</h2>
+        <p class="measure">Tell us about the property and your typical booking pattern, and we'll put together a quote for ongoing turnovers.</p>
+        <div class="contact-detail">
+          <div><strong>Phone</strong>[PHONE NUMBER]</div>
+          <div><strong>Email</strong>[EMAIL ADDRESS]</div>
+          <div><strong>Service area</strong>[SUBURBS / MELBOURNE REGION SERVICED]</div>
+        </div>
+      </div>
+      <div>
+        <!-- Formspree endpoint is live (Didiya Quote Requests form). -->
+        <form id="quoteForm" action="https://formspree.io/f/mljdrada" method="POST">
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div>
+            <label for="address">Property suburb / address</label>
+            <input type="text" id="address" name="address" required>
+          </div>
+          <div>
+            <label for="need">What do you need?</label>
+            <select id="need" name="need">
+              <option>Ongoing Airbnb / short-stay turnovers</option>
+              <option>One-off clean</option>
+              <option>Emergency / urgent clean</option>
+              <option>Same-day turnover</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Details (turnover frequency, checkout times, anything else)</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Request a quote</button>
+          <p class="form-note">We usually reply within one business day.</p>
+          <div class="form-success" id="formSuccess">Thanks — your quote request has been sent. We'll be in touch shortly.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <div>© <span id="year"></span> Didiya Cleaning Services. All rights reserved.</div>
+    <div>Melbourne, Australia</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

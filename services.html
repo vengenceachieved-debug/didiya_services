@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Didiya Cleaning Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=Bricolage+Grotesque:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <a href="index.html" class="wordmark">
+      <svg class="wordmark-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Didiya droplet mark">
+        <path d="M20 4 C20 4 9 18 9 26 C9 33 14 37 20 37 C26 37 31 33 31 26 C31 18 20 4 20 4 Z" fill="#0E3331"/>
+        <ellipse cx="15.5" cy="21" rx="2.6" ry="4.6" fill="#D8A445" opacity="0.9" transform="rotate(-18 15.5 21)"/>
+      </svg>
+      <span class="wordmark-text">
+        <span class="wordmark-name">Didiya</span>
+        <span class="wordmark-tag">Cleaning Services</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="why-us.html">Why Didiya</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:[PHONE NUMBER]" class="call-btn">Call [PHONE NUMBER]</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-hero slideshow">
+    <div class="slideshow-slide active" style="background-image:url('https://images.unsplash.com/photo-1580256081112-e49377338b7f?auto=format&fit=crop&w=1600&q=70');"></div>
+    <div class="slideshow-slide" style="background-image:url('https://images.unsplash.com/photo-1740657254989-42fe9c3b8cce?auto=format&fit=crop&w=1600&q=70');"></div>
+    <div class="slideshow-slide" style="background-image:url('https://images.unsplash.com/photo-1686178827149-6d55c72d81df?auto=format&fit=crop&w=1600&q=70');"></div>
+    <div class="wrap">
+      <div class="eyebrow">Services</div>
+      <h1>What's included in every turnover.</h1>
+      <p>Every visit is built around the same detailed checklist, whether it's a routine changeover or a same-day emergency.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap" style="display:flex; flex-direction:column; gap:1px;">
+
+      <div class="service-detail reveal">
+        <div class="service-detail-photo" style="background-image:url('https://images.unsplash.com/photo-1776763255197-495b343d5a33?auto=format&fit=crop&w=800&q=70');"></div>
+        <div class="service-detail-copy">
+          <h3>Turnover essentials</h3>
+          <p>The core of every changeover — done the same way, every time.</p>
+          <ul>
+            <li>Full Airbnb and short-stay turnover cleaning</li>
+            <li>Linen changes and bed making</li>
+            <li>Restocking essentials (toiletries, paper goods, coffee & tea)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="service-detail-photo" style="background-image:url('https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=800&q=70');"></div>
+        <div class="service-detail-copy">
+          <h3>Deep clean & property checks</h3>
+          <p>The details guests notice first, and the checks hosts rely on.</p>
+          <ul>
+            <li>Bathroom and kitchen cleaning</li>
+            <li>Detailed property checks for damage or missing items</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="service-detail-photo" style="background-image:url('https://images.unsplash.com/photo-1669101602108-fa5ba89507ee?auto=format&fit=crop&w=800&q=70');"></div>
+        <div class="service-detail-copy">
+          <h3>Flexible & urgent turnovers</h3>
+          <p>Booked around your calendar, not standard business hours.</p>
+          <ul>
+            <li>Emergency and urgent cleaning services</li>
+            <li>Same-day and short-notice turnovers</li>
+            <li>Early morning, evening and weekend availability</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="cta-banner" style="background-image:url('https://images.unsplash.com/photo-1740657254989-42fe9c3b8cce?auto=format&fit=crop&w=1600&q=70');">
+    <div class="wrap">
+      <h2>Want this handled for your next changeover?</h2>
+      <a href="contact.html" class="btn-primary">Get a free quote</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <div>© <span id="year"></span> Didiya Cleaning Services. All rights reserved.</div>
+    <div>Melbourne, Australia</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
